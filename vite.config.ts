@@ -17,14 +17,5 @@ export default defineConfig({
       },
     }),
     [tsconfigPaths()],
-  ],
-  build: {
-    minify: "terser", // 使用 terser 進行更徹底的代碼壓縮
-    terserOptions: {
-      compress: {
-        drop_console: true, // 移除 console 語句
-        pure_funcs: ["console.log"], // 移除指定的函數調用
-      },
-    },
-  },
+  ]
 });
